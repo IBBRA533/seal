@@ -1,8 +1,6 @@
 // Copyright (c), Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-// Copyright (c), Mysten Labs, Inc.
-// SPDX-License-Identifier: Apache-2.0
 
 import React from 'react';
 import { ConnectButton, useCurrentAccount } from '@mysten/dapp-kit';
