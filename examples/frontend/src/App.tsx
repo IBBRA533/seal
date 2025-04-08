@@ -16,7 +16,6 @@ import { AllServices } from './OwnedSubscriptionServices';
 import Feeds from './AllowlistView';
 import { Button } from '@/components/ui/button';
 
-
 function LandingPage() {
   const cardData = [
     {
@@ -36,11 +35,7 @@ function LandingPage() {
   return (
     <Grid columns="2" gap="6">
       {cardData.map((card, index) => (
-        <.div
-          key={index}
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: 'spring', stiffness: 300 }}
-        >
+        <div key={index}>
           <Card className="p-6 rounded-2xl shadow-md hover:shadow-xl">
             <Flex direction="column" gap="4" align="center" justify="between" style={{ height: '100%' }}>
               <div style={{ textAlign: 'center' }}>
@@ -54,7 +49,7 @@ function LandingPage() {
               </Link>
             </Flex>
           </Card>
-        </.div>
+        </div>
       ))}
     </Grid>
   );
@@ -138,4 +133,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
