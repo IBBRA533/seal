@@ -15,7 +15,7 @@ import { AllAllowlist } from './OwnedAllowlists';
 import { AllServices } from './OwnedSubscriptionServices';
 import Feeds from './AllowlistView';
 import { Button } from '@/components/ui/button';
-import { motion } from 'framer-motion';
+
 
 function LandingPage() {
   const cardData = [
@@ -36,7 +36,7 @@ function LandingPage() {
   return (
     <Grid columns="2" gap="6">
       {cardData.map((card, index) => (
-        <motion.div
+        <.div
           key={index}
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 300 }}
@@ -54,7 +54,7 @@ function LandingPage() {
               </Link>
             </Flex>
           </Card>
-        </motion.div>
+        </.div>
       ))}
     </Grid>
   );
